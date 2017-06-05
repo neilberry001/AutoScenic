@@ -81,3 +81,6 @@ define('DISALLOW_FILE_EDIT', true);
 if (!defined('ABSPATH')) {
     define('ABSPATH', $webroot_dir . '/wp/');
 }
+
+
+define('GMAPS_API_KEY', 'AIzaSyARpX63w_3rs0vE4oXWh41khsTuhPwB524');
