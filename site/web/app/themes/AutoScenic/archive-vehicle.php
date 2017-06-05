@@ -17,6 +17,9 @@
             <div class="col">
                 <?php echo facetwp_display( 'facet', 'vehicle_type' ); ?>
             </div>
+            <div class="col">
+                <?php echo facetwp_display( 'facet', 'vehicle_location' ); ?>
+            </div>
         </div>
 
 
