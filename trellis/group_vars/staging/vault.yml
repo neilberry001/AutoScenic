@@ -13,6 +13,7 @@ vault_wordpress_sites:
   autoscenic.com:
     env:
         db_password: hb8OzfSdnEBw
+        acf_pro_key: b3JkZXJfaWQ9MTA1OTEwfHR5cGU9cGVyc29uYWx8ZGF0ZT0yMDE3LTA1LTA4IDE5OjMzOjQ1
         # Generate your keys here: https://roots.io/salts.html
         auth_key: "}pwn6>O#QkjFLWX*wd$B6F$qCYYg|MBLkgM|!hx4/XYPcZ2U{<q;d<2*fUqATa^/"
         secure_auth_key: "T.d?`cKb`6x;JtzS=g+{nxitdP$A2(Mk2hvtrc*%$7Ch26$0vBeC7^4uRq5&<e`0"
