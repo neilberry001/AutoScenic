@@ -1,0 +1,61 @@
+.wrap {
+  background: #FFFFFF;
+}
+.wrap.container {
+  padding: 4rem;
+  border-radius: 1em;
+}
+.middle-page-banner {
+  margin-right: -4rem;
+  padding: 0;
+
+}
+
+.alignright--fluid {
+  @extend .alignright;
+  margin-right: 0rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.prewrap {
+  @include gradient-y($brand-primary, lighten($brand-primary,10%));
+  box-shadow: 10px 5px 16px rgba(14,21,32,0.17);
+  margin-bottom: -40px;
+}
+
+.card-footer {
+  border-top: none;
+}
+
+.card {
+  dt {
+    font-size: $font-size-xs;
+    color: $cool-grey;
+  }
+
+  dd {
+    border-bottom: 1px solid $cool-grey;;
+    margin-bottom: 1.25em;
+    color: $cool-grey;
+  }
+}
+
+.card-columns {
+  @include media-breakpoint-only(sm) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(md) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
+}
+
+.blockquote {
+  font-style: italic;
+}

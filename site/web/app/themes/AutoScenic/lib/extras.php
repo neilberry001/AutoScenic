@@ -44,7 +44,7 @@ add_filter('sage/wrap_base', __NAMESPACE__ . '\\sage_wrap_base_cpts'); // Add ou
 
 function navbar_nav_class( $classes, $item )
 {
-    $classes[] = 'nav-link';
+    $classes[] = 'nav-item';
 
     return $classes;
 }

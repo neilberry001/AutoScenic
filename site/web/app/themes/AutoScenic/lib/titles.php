@@ -13,6 +13,11 @@ function title() {
       return __('Latest Posts', 'sage');
     }
   } elseif (is_archive()) {
+
+      if(is_post_type_archive('vehicle')) {
+          return 'Vehicle Search';
+      }
+
     return get_the_archive_title();
   } elseif (is_search()) {
     return sprintf(__('Search Results for %s', 'sage'), get_search_query());

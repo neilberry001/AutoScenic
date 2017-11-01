@@ -61,13 +61,15 @@
     $images = get_field('images');
 
     if( $images ): ?>
+
+
     <div id="carouselVehicle" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <?php foreach( $images as $image ): ?>
 
-                <div class="carousel-item <?php echo ($image === reset($images)) ? 'active' :''; ?>">
-                    <img class="d-block img-fluid" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
-                </div>
+            <div class="carousel-item text-right <?php echo ($image === reset($images)) ? 'active' :''; ?>">
+                <?php echo fly_get_attachment_image( $image['id'], array( 1280, 500 ), true, ['class'=> 'd-block img-fluid rounded-left'] ); ?>
+            </div>
             <?php endforeach; ?>
         </div>
         <a class="carousel-control-prev" href="#carouselVehicle" role="button" data-slide="prev">

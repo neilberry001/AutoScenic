@@ -1,0 +1,4 @@
+.btn-primary {
+  text-transform: uppercase !important;
+  @include gradient-y($brand-primary, lighten($brand-primary,5%));
+}

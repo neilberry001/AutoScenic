@@ -13,3 +13,113 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+.facetwp-facet {
+  @extend .text-left
+}
+.fs-wrap,
+#facetwp-radius,
+#facetwp-location {
+  @extend .form-control;
+  background: #2F3C56;
+  border-color: #2F3C56 !important;
+  &:focus {
+    background: #2F3C56;
+    color: #FFFFFF;
+  }
+  &::placeholder {
+    color: #FFFFFF;
+  }
+
+  color: #FFFFFF;
+  border-radius: 2rem;
+}
+.facetwp-selections {
+  display: none;
+}
+#facetwp-radius,
+.fs-label-wrap {
+  border: none !important;
+  background-color: #2F3C56 !important;
+  border-color: #2F3C56 !important;
+  color: #FFFFFF;
+  &:hover {
+    cursor: pointer;
+  }
+  &::placeholder {
+    color: #FFFFFF;
+  }
+}
+
+.fs-arrow {
+
+  width: 0;
+  height: 0;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+
+  margin: inherit !important;
+
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  top: 6px !important;
+  right: 14px !important;
+  bottom: 0 !important;
+}
+.fs-arrow:before {
+  content: "\f175";
+}
+.facetwp-facet-vehicle_location {
+  @extend .row;
+}
+.location-wrap {
+  @extend .col-8;
+}
+#facetwp-radius {
+  @extend .col-4;
+}
+.locate-me {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  top: 10px !important;
+  right: 23px !important;
+  bottom: 0 !important;
+
+  width: 1.28571429em;
+  text-align: center;
+
+  &:before {
+    content: "\f124" !important;
+    background: none !important;
+  }
+}
+.wppb-user-forms {
+  ul {
+    @extend .list-unstyled;
+
+  }
+
+
+  .form-submit {
+    .button {
+      @extend .btn;
+      @extend .btn-primary;
+    }
+  }
+}
+.wppb-form-field {
+  @extend .form-group;
+  .text-input {
+    @extend .form-control;
+  }
+}

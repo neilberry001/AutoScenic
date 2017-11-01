@@ -35,6 +35,7 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
+  add_image_size('main-vehicle',1280, 720, true);
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
@@ -106,3 +107,22 @@ function assets() {
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+// Add 'site-nav__link' class
+add_filter( 'nav_menu_link_attributes',  __NAMESPACE__ . '\\add_nav_menu_link_atts', 10, 4 );
+
+function add_nav_menu_link_atts( $atts, $item, $args, $depth ) {
+    $atts['class'] = 'nav-link';
+
+    return $atts;
+}
+function new_nav_menu_items($items) {
+
+    $active = (is_front_page()) ? 'active ' : '';
+    $homelink = '<li class="'. $active .'nav-item menu-item menu-home"><a class="nav-link" href="' . home_url( '/' ) . '"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;<span class="text-hide">' . __('Home') . '</span></a></li>';
+    // add the home link to the end of the menu
+    $items = $homelink . $items;
+
+    return $items;
+}
+add_filter( 'wp_nav_menu_primary-navigation_items', __NAMESPACE__ . '\\new_nav_menu_items', 10, 4 );;

@@ -18,13 +18,14 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
+    <div class="container-fluid prewrap p-4">&nbsp;</div>
     <div class="wrap container" role="document">
       <div class="content row">
-        <main class="main">
+        <main class="main flex-last">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar">
+          <aside class="sidebar flex-first">
             <?php include Wrapper\sidebar_path(); ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>

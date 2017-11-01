@@ -1,0 +1,36 @@
+a.nav-link {
+  border-bottom: 2px solid $bunting;
+  &:hover {
+    border-bottom-color: $brand-primary;
+  }
+}
+header.banner {
+  padding-bottom: 4em;
+  @include media-breakpoint-down(md){
+    padding-bottom: 2em;
+  }
+}
+.navbar-brand {
+  @include media-breakpoint-down(md){
+    display: inline;
+  }
+}
+.navbar-brand img {
+  height: 75px;
+  @include media-breakpoint-down(md){
+    height: 40px;
+  }
+}
+
+.page-header {
+  h1 {
+    font-size: $font-size-h3;
+  }
+  margin-bottom: 2rem;
+}
+
+//.bg-inverse {
+//  background: url(../images/autoscenic.svg) no-repeat 188% 9%;
+//  background-size: 150%;
+//  background-blend-mode: overlay;
+//}
