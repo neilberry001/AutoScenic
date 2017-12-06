@@ -1,0 +1,15 @@
+@include bg-variant('.bg-footer', #706F6F);
+.bg-footer {
+  color: #FFFFFF !important;
+
+
+    a,
+    a.nav-link {
+      color: #FFFFFF;
+      &:hover {
+        color: darken(#FFFFFF, 10%);
+      }
+      border: none;
+    }
+
+}

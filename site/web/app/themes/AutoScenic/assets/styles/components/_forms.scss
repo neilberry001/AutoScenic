@@ -17,6 +17,10 @@
 .facetwp-facet {
   @extend .text-left
 }
+.fs-wrap {
+  display: block !important;
+  @extend .mx-auto;
+}
 .fs-wrap,
 #facetwp-radius,
 #facetwp-location {

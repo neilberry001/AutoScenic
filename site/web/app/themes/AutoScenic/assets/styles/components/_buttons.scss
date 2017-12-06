@@ -2,3 +2,15 @@
   text-transform: uppercase !important;
   @include gradient-y($brand-primary, lighten($brand-primary,5%));
 }
+
+.acf-button,
+.button {
+  @extend .btn;
+  margin-left: 15px;
+}
+.button-primary {
+  @extend  .btn-primary;
+}
+.button-large {
+  @extend .btn-lg;
+}

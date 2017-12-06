@@ -1,9 +1,12 @@
-.wrap {
-  background: #FFFFFF;
+
+.footer .container {
+  padding: 4rem 0;
 }
 .wrap.container {
   padding: 4rem;
   border-radius: 1em;
+  background: #FFFFFF;
+  box-shadow: 10px 5px 16px  rgba(14,21,32,0.17);
 }
 .middle-page-banner {
   margin-right: -4rem;
@@ -51,10 +54,11 @@
   @include media-breakpoint-only(lg) {
     column-count: 3;
   }
-  @include media-breakpoint-only(xl) {
-    column-count: 4;
-  }
 }
+.card-columns.my-vehicles-columns {
+
+}
+
 
 .blockquote {
   font-style: italic;
