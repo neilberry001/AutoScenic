@@ -1,26 +1,31 @@
-<div class="container-fluid bg-inverse text-white">
+<div class="container-fluid bg-inverse">
 
     <div class="container">
         <div class="text-center">
             <?php get_template_part('templates/page', 'header--white'); ?>
         </div>
 
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center mt-4">
             <div class="col">
+                <h5 class="text-center text-white">Make</h5>
                 <?php echo facetwp_display( 'facet', 'vehicle_make' ); ?>
             </div>
             <div class="col">
+                <h5 class="text-center text-white">Model</h5>
                 <?php echo facetwp_display( 'facet', 'vehicle_model' ); ?>
             </div>
             <div class="col">
+                <h5 class="text-center text-white">Era</h5>
                 <?php echo facetwp_display( 'facet', 'vehicle_era' ); ?>
             </div>
             <div class="col">
+                <h5 class="text-center text-white">Type</h5>
                 <?php echo facetwp_display( 'facet', 'vehicle_type' ); ?>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-4">
+                <h5 class="text-center text-white">Location</h5>
                 <?php echo facetwp_display( 'facet', 'vehicle_location' ); ?>
             </div>
         </div>

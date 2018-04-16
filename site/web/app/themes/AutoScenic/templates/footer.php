@@ -30,7 +30,7 @@
       <div class="row justify-content-between">
           <div class="col-4">
               <ul class="nav h3">
-                  <li>Follow us</li>
+                  <li class="h5 pt-1 pb-0 text-white">Follow us</li>
                   <li class="nav-item">
                       <a class="nav-link hide-text" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                   </li>

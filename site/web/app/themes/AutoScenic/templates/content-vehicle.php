@@ -1,6 +1,6 @@
-<article <?php post_class("card"); ?>>
+<article <?php post_class("card border-0"); ?>>
     <?php get_template_part('templates/images/card-thumbnail'); ?>
-    <div class="card-block">
+    <div class="card-block pb-0">
         <h2 class="card-title text-truncate"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         <div class="card-text">
             <dl>
@@ -13,7 +13,7 @@
             </dl>
         </div>
     </div>
-    <footer class="card-footer text-center">
+    <footer class="card-footer text-center pb-4">
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="btn btn-primary">View vehicle</a>
     </footer>
 </article>

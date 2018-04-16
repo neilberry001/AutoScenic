@@ -21,7 +21,7 @@
   display: block !important;
   @extend .mx-auto;
 }
-.fs-wrap,
+
 #facetwp-radius,
 #facetwp-location {
   @extend .form-control;
@@ -73,11 +73,13 @@
   -moz-osx-font-smoothing: grayscale;
 
   top: 6px !important;
-  right: 14px !important;
+  right: 22px !important;
   bottom: 0 !important;
+
+  color: $light-blue;
 }
 .fs-arrow:before {
-  content: "\f175";
+  content: "\f063";
 }
 .facetwp-facet-vehicle_location {
   @extend .row;
@@ -96,11 +98,15 @@
   -moz-osx-font-smoothing: grayscale;
 
   top: 10px !important;
-  right: 23px !important;
+  right: 26px !important;
   bottom: 0 !important;
 
   width: 1.28571429em;
   text-align: center;
+
+  opacity: 1 !important;
+
+  color: $light-blue;
 
   &:before {
     content: "\f124" !important;

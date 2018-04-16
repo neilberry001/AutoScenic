@@ -41,28 +41,29 @@
                     ]);
                 endif;
                 ?>
+                <?php
+                if (members_current_user_has_role('administrator') ||
+                    members_current_user_has_role('supplier')) :
+                    ?>
+                    <ul class="navbar-nav">
+                        <li class="nav-item menu-item menu-create-vehicle">
+                            <a class="nav-link" href="<?php echo home_url('/create-vehicle'); ?>">
+                                <span><?php echo __('Add Vehicle'); ?></span>
+                            </a>
+                        </li>
+                        <li class="nav-item menu-item menu-my-vehicles">
+                            <a class="nav-link" href="<?php echo home_url('/my-vehicles'); ?>">
+                                <span><?php echo __('My Vehicles'); ?></span>
+                            </a>
+                        </li>
+                    </ul>
+                <?php endif; ?>
             </div>
         </nav>
 
 
 
-        <?php
-        if (members_current_user_has_role( 'administrator' ) ||
-            members_current_user_has_role( 'supplier' )) :
-        ?>
-        <ul class="nav justify-content-center mt-1">
-            <li class="nav-item menu-item menu-create-vehicle">
-                <a class="nav-link" href="<?php echo home_url( '/create-vehicle' ); ?>">
-                    <i class="fa fa-plus fa-fw" aria-hidden="true"></i>&nbsp;<span><?php echo __('Add Vehicle'); ?></span>
-                </a>
-            </li>
-            <li class="nav-item menu-item menu-my-vehicles">
-                <a class="nav-link" href="<?php echo home_url( '/my-vehicles' ); ?>">
-                    <i class="fa fa-car fa-fw" aria-hidden="true"></i>&nbsp;<span><?php echo __('My Vehicles'); ?></span>
-                </a>
-            </li>
-        </ul>
-        <?php endif; ?>
+
 
 
     </div>
